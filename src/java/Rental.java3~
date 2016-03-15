@@ -1,0 +1,97 @@
+import java.util.Date;
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.9E2F26BF-A4DB-B5A3-FDF2-498B4DFF7032]
+// </editor-fold> 
+public class Rental {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.9611AC39-BC68-E644-F138-26EDFB786C2B]
+    // </editor-fold> 
+    private Date startDate;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.BBEFD378-83EE-77E6-52A5-6A8E752962E5]
+    // </editor-fold> 
+    private Double startMileage;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.936FA55B-81CA-9C2D-BC67-84E355D635B5]
+    // </editor-fold> 
+    private CustomerInformation customer;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.7C9BF5DE-3C54-646D-7ABC-D9140A93137E]
+    // </editor-fold> 
+    private Double Deposit;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.6C9BB892-03E7-76BE-25E9-8E592922A5AD]
+    // </editor-fold> 
+    public Rental () {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.E9669CC0-D5BA-0435-56B2-4FC17F30CD07]
+    // </editor-fold> 
+    public Rental (Date startDate, Double startMileage, CustomerInformation customer, Double deposit) {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.61EAC97D-6227-9216-BF58-3DF83A758634]
+    // </editor-fold> 
+    public Double getDeposit () {
+        return Deposit;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.98E26793-BDD4-53EF-EEE4-0F81974985FB]
+    // </editor-fold> 
+    public void setDeposit (Double val) {
+        this.Deposit = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.B6537B9A-BD30-0F13-409A-8878F5A41B2F]
+    // </editor-fold> 
+    public CustomerInformation getCustomer () {
+        return customer;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.53DE60D5-1069-70D6-021D-ACCF6912737D]
+    // </editor-fold> 
+    public void setCustomer (CustomerInformation val) {
+        this.customer = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.87F07B2F-F42B-42F2-A6B8-6831481F8E87]
+    // </editor-fold> 
+    public Date getStartDate () {
+        return startDate;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.40DC3A92-4C9D-6D28-4C1C-D97E47B05CEB]
+    // </editor-fold> 
+    public void setStartDate (Date val) {
+        this.startDate = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.B0323036-D1AE-A7C0-247F-344308A5A818]
+    // </editor-fold> 
+    public Double getStartMileage () {
+        return startMileage;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.5EDD3DDC-6AE0-B90D-10F8-1222EB1B6B92]
+    // </editor-fold> 
+    public void setStartMileage (Double val) {
+        this.startMileage = val;
+    }
+
+}
+

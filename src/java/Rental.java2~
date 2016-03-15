@@ -1,0 +1,15 @@
+
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.9E2F26BF-A4DB-B5A3-FDF2-498B4DFF7032]
+// </editor-fold> 
+public class Rental {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.6C9BB892-03E7-76BE-25E9-8E592922A5AD]
+    // </editor-fold> 
+    public Rental () {
+    }
+
+}
+

@@ -1,0 +1,72 @@
+
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.8D0BB16C-1961-8732-2392-CAFB8850BA89]
+// </editor-fold> 
+public class VehicleType {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.71A5709E-ADDC-1EF5-1255-CDDEBFE86F4F]
+    // </editor-fold> 
+    private String model;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.6660C692-88CE-15A2-3AB6-724D97AD4C6F]
+    // </editor-fold> 
+    private String option;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.8B14B2C4-42B6-1CBE-251E-E95A7FFF496C]
+    // </editor-fold> 
+    private Double rentalRate;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.5FF7788E-767C-287D-09B4-DC2C48D4758C]
+    // </editor-fold> 
+    public VehicleType () {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.6E15CDF8-2294-4682-D200-ABD8203B4779]
+    // </editor-fold> 
+    public String getModel () {
+        return model;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.38E3B808-0270-0AF4-7A6E-7E755837A9FB]
+    // </editor-fold> 
+    public void setModel (String val) {
+        this.model = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.5B544C7A-80CE-66EF-807E-56AA8B53BF53]
+    // </editor-fold> 
+    public String getOption () {
+        return option;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.897BD818-4425-FABF-1D59-A278A173A68F]
+    // </editor-fold> 
+    public void setOption (String val) {
+        this.option = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.58B000F5-4301-3CD3-5085-D913C207BB3F]
+    // </editor-fold> 
+    public Double getRentalRate () {
+        return rentalRate;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.1B412FF9-CA50-EA8E-FF25-7CF0E1A30ECF]
+    // </editor-fold> 
+    public void setRentalRate (Double val) {
+        this.rentalRate = val;
+    }
+
+}
+

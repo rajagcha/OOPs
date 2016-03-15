@@ -1,0 +1,21 @@
+
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.66723AAE-5EEA-D104-1270-F9F97DDF0926]
+// </editor-fold> 
+public class CostReport {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.01E0FBEC-406E-D3EF-11C0-923EF8E73A82]
+    // </editor-fold> 
+    public CostReport () {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.8997B900-C30C-C4CC-2AA3-75974D0B5F3E]
+    // </editor-fold> 
+    public CostReport (Date date, String description, Double cost) {
+    }
+
+}
+

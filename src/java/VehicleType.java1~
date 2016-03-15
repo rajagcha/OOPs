@@ -1,0 +1,10 @@
+
+public class VehicleType {
+
+    private int Unnamed;
+
+    public VehicleType () {
+    }
+
+}
+

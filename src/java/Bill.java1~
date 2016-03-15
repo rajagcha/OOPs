@@ -1,0 +1,186 @@
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.29BD9BCB-C638-46E6-7DC4-D867D8518D61]
+// </editor-fold> 
+public class Bill {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.E320CBD1-C8B9-285B-3705-D013569A95DA]
+    // </editor-fold> 
+    private Date startDate;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.4AEFE902-7E26-38C5-A26B-B4D63F338B99]
+    // </editor-fold> 
+    private Date endDate;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.50F60B6B-750B-8AA7-480A-CFE2CA4ABEA5]
+    // </editor-fold> 
+    private Double startMileage;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.3E88788E-973E-BEE5-D59D-D2397D626862]
+    // </editor-fold> 
+    private Double endMileage;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.27149722-9087-8BBA-DDAF-711FC8913F62]
+    // </editor-fold> 
+    private Double gasAdded;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.2649CEF6-8903-98B9-C442-8FB910901F82]
+    // </editor-fold> 
+    private Double deposit;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.EA678A2E-BE62-9ADB-C4BB-2EBEC919817F]
+    // </editor-fold> 
+    private Double damageCost;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.CE0D4FDE-8E11-B3E9-AA46-B8ED5B4D3664]
+    // </editor-fold> 
+    private Double totalFee;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.7E8C7F13-7ED9-D8B0-19EC-5B9B2DFE6846]
+    // </editor-fold> 
+    public Bill () {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.53BB29A3-7284-72B8-EFFE-020DC07C0124]
+    // </editor-fold> 
+    public Bill (Rental currentRental, Date endDate, Double endMileage, Double gasAdded, Double damageCharge) {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.D1A439AE-0507-5708-A128-A4571FCC7B2F]
+    // </editor-fold> 
+    public Double getDamageCost () {
+        return damageCost;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.5C52DACD-2F70-F859-20D2-93B4B70DAEC9]
+    // </editor-fold> 
+    public void setDamageCost (Double val) {
+        this.damageCost = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.2CFCE5E5-8122-12F0-B952-68E941484232]
+    // </editor-fold> 
+    public Double getDeposit () {
+        return deposit;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.D5CE6250-08F5-3530-9663-2D8C8C41C369]
+    // </editor-fold> 
+    public void setDeposit (Double val) {
+        this.deposit = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.9A6FDDE9-3E90-1F10-F265-0E3110C28F10]
+    // </editor-fold> 
+    public Date getEndDate () {
+        return endDate;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.7357F3A5-EEBF-9F87-52CB-18954AAF82AC]
+    // </editor-fold> 
+    public void setEndDate (Date val) {
+        this.endDate = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.F57AEE70-25E6-0C6B-7D14-701D946ED987]
+    // </editor-fold> 
+    public Double getEndMileage () {
+        return endMileage;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.BD17DC37-3B39-BF91-ED4F-1A0B0D1D94E4]
+    // </editor-fold> 
+    public void setEndMileage (Double val) {
+        this.endMileage = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.D48EB76E-689E-5C3F-E18C-1126AEA3DBB6]
+    // </editor-fold> 
+    public Double getGasAdded () {
+        return gasAdded;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.DDC5400A-4D3B-0757-718A-00468BA52DA9]
+    // </editor-fold> 
+    public void setGasAdded (Double val) {
+        this.gasAdded = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.4960F5AE-904D-8C6D-C6B1-9000220BB6CB]
+    // </editor-fold> 
+    public Date getStartDate () {
+        return startDate;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.5ED79C5E-DA72-0E94-0C08-3AE77A0757C9]
+    // </editor-fold> 
+    public void setStartDate (Date val) {
+        this.startDate = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.6B8518F4-D5A2-0B39-7ACC-030C66E6BF58]
+    // </editor-fold> 
+    public Double getStartMileage () {
+        return startMileage;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.C65D35C0-DEEA-9C57-B8DD-0BBC519B47BB]
+    // </editor-fold> 
+    public void setStartMileage (Double val) {
+        this.startMileage = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.08730A62-853F-7D5F-F157-3BE064168DDF]
+    // </editor-fold> 
+    public Double calculateCharge (Double daileMilesAllowed, Double mileageSurcharge, Double gasCost) {
+        return null;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.AC63AD56-3093-9F74-4C58-A992DA498A4F]
+    // </editor-fold> 
+    public Double calculateRevenue (Double dailyMilesAllowed, Double mileageSurcharge, Double gasCost) {
+        return null;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.CCF8AFEE-A284-BB5B-9FC1-74DBDD68436B]
+    // </editor-fold> 
+    public Double getTotalFee () {
+        return totalFee;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.9D058996-76F6-5482-B2FA-BAE55F24B2D7]
+    // </editor-fold> 
+    public void setTotalFee (Double val) {
+        this.totalFee = val;
+    }
+
+}
+

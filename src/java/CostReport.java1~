@@ -1,0 +1,11 @@
+
+public class CostReport {
+
+    public CostReport () {
+    }
+
+    public CostReport (Date date, String description, Double cost) {
+    }
+
+}
+

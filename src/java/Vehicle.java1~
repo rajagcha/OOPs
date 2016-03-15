@@ -1,0 +1,226 @@
+import java.util.ArrayList; 
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.63955DCA-A09A-7D10-DAAB-537BE0CAE989]
+// </editor-fold> 
+public class Vehicle {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.D494EAD5-A286-58FF-73ED-6CA9582655F6]
+    // </editor-fold> 
+    private String id;                        // Vehicle Identifier
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.8702E4A3-F01A-D52A-17D8-C42C596B177B]
+    // </editor-fold> 
+    private VehicleType type;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.24422537-337F-5D4F-D19A-5C420B3AB4E7]
+    // </editor-fold> 
+    private VehicleStatus status;                    // current Status
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.C860C320-C7CB-8A73-F967-643B960DE531]
+    // </editor-fold> 
+    private Double currentMilage;                    // Current Milage on the Vehicle
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.DDED0D8E-7DA8-6874-8ED5-EFB2E4CFBF88]
+    // </editor-fold> 
+    private ArrayList<CostReport> serviceReport;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.5B2A2FFF-91ED-A699-A5FC-6B05CEEB0ED5]
+    // </editor-fold> 
+    private ArrayList<CostReport> damageReport;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.61C6F925-FE32-82FE-EDF0-F5B9552B8725]
+    // </editor-fold> 
+    private Rental currentRental;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.C412A64E-F2A5-FB91-53D6-51B771395E69]
+    // </editor-fold> 
+    private ArrayList<Bill> billHistory;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.9619B280-4813-C194-9171-AEFFB5948212]
+    // </editor-fold> 
+    public Vehicle (String id, VehicleType type, Double mileage) {
+        this.Id=vehicleId;
+        this.type=type;
+        this.currentMilage=mileage;
+        this.status=VehicleStatus.UNAVAILABLE;
+        this.damageReport=null;
+        this.serviceReport=null;
+        this.currentRental=null;
+        this.billHistory=null;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.D6BBB19B-6609-0B0A-679E-FAC72635ACF3]
+    // </editor-fold>
+    public void changeStatus (VehicleStatus newStatus) {
+        // make sure that the status change is allowed
+        if (this.status == VehicleStatus.DELETED)
+
+            // This should be in the enum class
+        swtich (this.status) {
+            // case Available allowed to go to any status
+            case VehicleStatus.Deleted :
+                // Can not change status from deleted
+                throw CanNotChangeStatusException();
+                break;
+            case VehicleStatus.UNAVAILABLE :
+                // Can not go to Rented
+                switch (newStatus) {
+                    case VehicleStatus.Rented:
+                        throw CanNotChangeStatusException();
+                        break;
+                }
+                break;
+            case VehicleStatus.RENTED :
+                switch (newStatus) {
+                    case VehicleStatus.Deleted :
+                        throw CanNotChangeStatusExpection();
+                        break;
+                }
+                break;
+        }
+
+        this.status=newStatus;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.E2409EE2-EFEB-632D-F9A0-2BD08433F5DD]
+    // </editor-fold> 
+    public Boolean checkStatus (VehicleStatus status) {
+        Boolean outValue=false;
+        if (this.status == status)
+               outValue=true;
+        return outValue;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.F5136AA8-D6AC-1035-78B0-9E60793E8211]
+    // </editor-fold> 
+    public ArrayList<Bill> getBillHistory () {
+        return billHistory;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.F90856CD-36CB-2445-C112-12D1F48D36B5]
+    // </editor-fold> 
+    public void setBillHistory (ArrayList<Bill> val) {
+        this.billHistory = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.9084AFE8-E6DC-74ED-F45E-3935C751E3C7]
+    // </editor-fold> 
+    public Double getCurrentMilage () {
+        return currentMilage;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.478F7604-C361-C1DD-6BEA-111991874D7F]
+    // </editor-fold> 
+    public void setCurrentMilage (Double val) {
+        this.currentMilage = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.1C7E7FF9-A835-B06D-0866-F99A2765704F]
+    // </editor-fold> 
+    public Rental getCurrentRental () {
+        return currentRental;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.FA00FE01-1BF5-4B92-5043-EF5FED07A969]
+    // </editor-fold> 
+    public void setCurrentRental (Rental val) {
+        this.currentRental = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.C802422A-4F59-D0C5-7068-A13913718721]
+    // </editor-fold> 
+    public ArrayList<CostReport> getDamageReport () {
+        return damageReport;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.3D1EA031-002C-2D8E-63BA-4EA6AA8C9A84]
+    // </editor-fold> 
+    public void setDamageReport (ArrayList<CostReport> val) {
+        this.damageReport = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.776F25BA-43EF-4884-C720-8D9FAAC64F7E]
+    // </editor-fold> 
+    public ArrayList<CostReport> getServiceReport () {
+        return serviceReport;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.F1C0EC7E-04EF-4B6E-2E4A-AE79A7457382]
+    // </editor-fold> 
+    public void setServiceReport (ArrayList<CostReport> val) {
+        this.serviceReport = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.BB4839EC-DA25-78D9-3E34-0BEFC9C75A11]
+    // </editor-fold> 
+    public VehicleStatus getStatus () {
+        return status;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.973BAEAE-8F0A-2220-92BB-D6B283AF346D]
+    // </editor-fold> 
+    public void setStatus (VehicleStatus val) {
+        this.status = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.EF7B0707-CC90-34A6-7C09-23A3227E46E9]
+    // </editor-fold> 
+    public String getId () {
+        return id;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.152CB05D-BD25-89B7-6FED-2E4097BDA7F0]
+    // </editor-fold> 
+    public void setId (String val) {
+        this.vehicleId = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.3B75FB18-8365-1A17-4742-D59474934B7A]
+    // </editor-fold> 
+    public VehicleType getType () {
+        return type;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.793DE7B6-D533-7F99-CA23-23B6156EB86D]
+    // </editor-fold> 
+    public void setType (VehicleType val) {
+        this.type = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.E250B42C-8319-FC71-A6BA-F6F57B31B7BE]
+    // </editor-fold> 
+    public void addService (CostReport serviceReport) {
+        this.serviceReport.add(serviceReport);
+    }
+
+}
+

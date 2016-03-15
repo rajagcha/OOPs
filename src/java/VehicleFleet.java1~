@@ -1,0 +1,73 @@
+import java.util.ArrayList;
+import java.util.Date;
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.357C975F-DD68-9D4D-C035-1F5DDF313112]
+// </editor-fold> 
+public class VehicleFleet {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.5F42C843-A757-4E52-65FB-BEDF6F5CE772]
+    // </editor-fold> 
+    private ArrayList<Vehicle> vehicles;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.35AE5958-BC50-2E9C-F9F3-936EF3DF1A19]
+    // </editor-fold> 
+    public VehicleFleet () {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.30AA5092-2FF1-3512-8B9D-E192A78CD942]
+    // </editor-fold> 
+    public void Unnamed () {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.951A59BE-1936-E9DE-EB23-0D1AD8F216CE]
+    // </editor-fold> 
+    public void addVehicle (String vehicleId, VehicleType type, Double mileage) {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.26AB4BA6-1A61-33D2-CC20-BB7475BAA89E]
+    // </editor-fold> 
+    public Boolean vehicleIdExists (String vehicleId) {
+        return null;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.592B5AE4-C6AE-63B8-7DFF-FC09560AF639]
+    // </editor-fold> 
+    public void deleteVehicle (String vehicleId) {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.1558C5DF-3A8B-479A-687B-C343A0204168]
+    // </editor-fold> 
+    public void returnVehicleFromService (String vehicleId, CostReport serviceReport) {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.47A5E611-0A47-4ADC-2ABD-39073D745240]
+    // </editor-fold> 
+    public CostReport generateServiceReport (Date returnDate, String serviceDescription, Double serviceCost) {
+        return null;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.D9D7C3C8-E314-E254-39D7-0EB7830C57B0]
+    // </editor-fold> 
+    public ArrayList<Vehicle> getVehicles () {
+        return vehicles;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.3204CC93-EB3C-9B13-3126-77B10CB57491]
+    // </editor-fold> 
+    public void setVehicles (ArrayList<Vehicle> val) {
+        this.vehicles = val;
+    }
+
+}
+

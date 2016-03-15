@@ -1,0 +1,20 @@
+
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.8D0BB16C-1961-8732-2392-CAFB8850BA89]
+// </editor-fold> 
+public class VehicleType {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.119A1217-2E5A-554A-7607-16058D1B21EA]
+    // </editor-fold> 
+    private int Unnamed;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.5FF7788E-767C-287D-09B4-DC2C48D4758C]
+    // </editor-fold> 
+    public VehicleType () {
+    }
+
+}
+
